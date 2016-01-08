@@ -1,0 +1,29 @@
+{
+    "name": "BaseTest",
+    "description": "base test model",
+    "idInjection": false,
+    "properties": {
+        "baseField1":{
+            "type": "string",
+            "required": true
+        },
+        "baseField2":{
+            "type": "string",
+            "required": false
+        },
+        "baseField3":{
+            "type": "string",
+            "required": false
+        }
+    },
+    "hidden": ["baseField2"],
+    "options": {
+        "mysql": {
+            "table": "mytest"
+        }
+    },
+    "scopes": {
+        "top5": {"limit": 5}
+    }
+
+}

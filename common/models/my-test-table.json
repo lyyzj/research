@@ -1,0 +1,16 @@
+{
+    "name": "MyTestTable",
+    "description": "mysql sql test table description",
+    "idInjection": true,
+    "properties": {
+        "test1":{
+            "type": "string",
+            "required": true
+        },
+        "test2":{
+            "type": "string",
+            "required": false
+        }
+    }
+
+}

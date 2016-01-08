@@ -1,0 +1,29 @@
+{
+    "name": "TestTable",
+    "description": "test table description",
+    "idInjection": false,
+    "properties": {
+        "test1":{
+            "type": "string",
+            "required": true
+        },
+        "test2":{
+            "type": "string",
+            "required": false
+        },
+        "test3":{
+            "type": "string",
+            "required": false
+        }
+    },
+    "options": {
+        "mysql": {
+            "table": "mytest"
+        }
+    },
+    "scopes": {
+        "top5": {"limit": 5},
+        "fields": ["test1"]
+    }
+
+}
