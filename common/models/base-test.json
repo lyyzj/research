@@ -14,16 +14,28 @@
         "baseField3":{
             "type": "string",
             "required": false
+        },
+        "baseRelationId":{
+            "type": "string",
+            "required": false
         }
     },
     "hidden": ["baseField2"],
+    "protected": ["baseField1"],
     "options": {
+        "description": "option base test model",
         "mysql": {
             "table": "mytest"
         }
     },
     "scopes": {
         "top5": {"limit": 5}
+    },
+    "relations":{
+        "baseRelation": {
+            "model": "BaseRelation",
+            "type": "belongsTo"
+        }
     }
 
 }
