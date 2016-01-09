@@ -1,0 +1,27 @@
+{
+    "name": "BaseRelation",
+    "description": "base relation test model",
+    "idInjection": false,
+    "properties": {
+        "baseRelField1":{
+            "type": "string",
+            "required": true
+        },
+        "baseRelField2":{
+            "type": "string",
+            "required": false
+        },
+        "baseRelField3":{
+            "type": "string",
+            "required": false
+        }
+    },
+    "relations":{
+        "baseTests": {
+            "model": "BaseTest",
+            "type": "hasMany",
+            "foreignKey": "baseRelationId"
+        }
+    }
+
+}
