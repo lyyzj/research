@@ -1,0 +1,22 @@
+{
+    "name": "Todo",
+    "description": "todo belongsTo relation",
+    "idInjection": true,
+    "properties": {
+        "todoName":{
+            "type": "string",
+            "required": true
+        },
+        "userId":{
+            "type": "string",
+            "required": true
+        }
+    },
+    "relations": {
+        "tuser": {
+            "type": "belongsTo",
+            "model": "TestUser",
+            "foreignKey": "userId"
+        }
+    }
+}
