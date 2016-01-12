@@ -1,0 +1,58 @@
+{
+    "name": "Custom",
+    "base": "PersistedModel",
+    "description": "hasMany relation",
+    "idInjection": true,
+    "properties": {
+        "customerName":{
+            "type": "string",
+            "required": true
+        }
+    },
+    "relations": {
+        "orders": {
+            "type": "hasMany",
+            "model": "Order",
+            "foreignKey": "customId"
+        }, 
+        "address": {
+            "type": "embedsOne",
+            "model": "Address",
+            "property": "houseAddress",
+            "options": {
+                "validate": true,
+                "forceId": false,
+                "persistent": true
+            }
+        },
+        "email": {
+            "type": "embedsMany",
+            "model": "Emails",
+            "property": "emailLists",
+            "options": {
+                "validate": true,
+                "forceId": false,
+                "persistent": true
+            }
+        },
+        "books": {
+            "type": "referencesMany",
+            "model": "Book",
+            "property": "bookIds",
+            "options": {
+                "validate": true,
+                "forceId": false
+            }
+        },
+        "boxs": {
+            "type": "embedsMany",
+            "model": "Box",
+            "property": "boxes",
+            "options": {
+                "validate": true,
+                "forceId": false
+            }
+        }
+
+    }
+}

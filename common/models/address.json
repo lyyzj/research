@@ -1,0 +1,12 @@
+{
+    "name": "Address",
+    "base": "PersistedModel",
+    "description": "embedsOne relation",
+    "idInjection": true,
+    "properties": {
+        "addressName":{
+            "type": "string",
+            "required": true
+        }
+    }
+}

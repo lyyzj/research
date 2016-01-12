@@ -46,5 +46,56 @@
   },
   "BaseRelation": {
     "dataSource": "mongodb"
+  },
+  "Todo": {
+    "dataSource": "mongodb"
+  },
+  "TestUser": {
+    "dataSource": "mongodb"
+  },
+  "TestTodo": {
+    "dataSource": "mongodb"
+  },
+  "BelongTo": {
+    "dataSource": "mongodb"
+  },
+  "Supplier": {
+    "dataSource": "mongodb"
+  },
+  "Account": {
+    "dataSource": "mongodb"
+  },
+  "Custom": {
+    "dataSource": "mongodb"
+  },
+  "Order": {
+    "dataSource": "mongodb"
+  },
+  "Student": {
+    "dataSource": "mongodb"
+  },
+  "Teacher": {
+    "dataSource": "mongodb"
+  },
+  "Course": {
+    "dataSource": "mongodb"
+  },
+  "tag": {
+    "dataSource": "mongodb"
+  },
+  "post": {
+    "dataSource": "mongodb"
+  },
+  "Address": {
+    "dataSource": "mongodb"
+  },
+  "Emails": {
+    "dataSource": "mongodb"
+  },
+  "Book": {
+    "dataSource": "mongodb"
+  },
+  "Box": {
+    "dataSource": "mongodb"
   }
 }

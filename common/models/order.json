@@ -1,0 +1,16 @@
+{
+    "name": "Order",
+    "base": "PersistedModel",
+    "description": "hasMany relation",
+    "idInjection": true,
+    "properties": {
+        "orderNo":{
+            "type": "string",
+            "required": true
+        },
+        "customId":{
+            "type": "string",
+            "required": true
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Teacher",
+    "base": "PersistedModel",
+    "description": "hasMany through relation",
+    "idInjection": true,
+    "properties": {
+        "teacherName":{
+            "type": "string",
+            "required": true
+        }
+    },
+    "relations": {
+        "students": {
+            "type": "hasMany",
+            "model": "Student",
+            "foreignKey": "teacherId",
+            "through": "Course",
+            "keyThrough": ["studentId"]
+        } 
+    }
+}

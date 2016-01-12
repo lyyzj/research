@@ -1,0 +1,17 @@
+{
+    "name": "Account",
+    "base": "PersistedModel",
+    "description": "hasOne relation",
+    "idInjection": true,
+    "properties": {
+        "accountName":{
+            "type": "string",
+            "required": true
+        },
+        "supplierId":{
+            "type": "string",
+            "required": true
+        }
+
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Supplier",
+    "base": "PersistedModel",
+    "description": "hasOne relation",
+    "idInjection": true,
+    "properties": {
+        "suName":{
+            "type": "string",
+            "required": true
+        }
+    },
+    "relations": {
+        "supplier_account": {
+            "type": "hasOne",
+            "model": "Account",
+            "foreignKey": "supplierId"
+        }
+    }
+}

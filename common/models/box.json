@@ -1,0 +1,16 @@
+{
+    "name": "Box",
+    "base": "PersistedModel",
+    "description": "embedsMany relation",
+    "idInjection": true,
+    "properties": {
+        "width":{
+            "type": "string",
+            "required": true
+        },
+        "boxName":{
+            "type": "string",
+            "required": true
+        }
+    }
+}

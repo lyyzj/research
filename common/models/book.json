@@ -1,0 +1,12 @@
+{
+    "name": "Book",
+    "base": "PersistedModel",
+    "description": "referencesMany relation",
+    "idInjection": true,
+    "properties": {
+        "bookName":{
+            "type": "string",
+            "required": true
+        }
+    }
+}

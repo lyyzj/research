@@ -1,0 +1,16 @@
+{
+    "name": "Emails",
+    "base": "PersistedModel",
+    "description": "embedsMany relation",
+    "idInjection": false,
+    "properties": {
+        "label":{
+            "type": "string",
+            "required": true
+        },
+        "address":{
+            "type": "string",
+            "required": true
+        }
+    }
+}

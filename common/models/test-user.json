@@ -1,6 +1,7 @@
 {
     "name": "TestUser",
     "description": "testUser hasMany relation",
+    "base": "PersistedModel",
     "idInjection": true,
     "properties": {
         "username":{
@@ -11,8 +12,13 @@
     "relations": {
         "todos": {
             "type": "hasMany",
-            "model": "User",
+            "model": "Todo",
             "foreignKey": "userId"
+        },
+        "testtodos": {
+            "type": "hasMany",
+            "model": "TestTodo",
+            "foreignKey": "testUserId"
         }
     }
 }

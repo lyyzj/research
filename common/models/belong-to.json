@@ -1,0 +1,18 @@
+{
+    "name": "BelongTo",
+    "description": "test todo belongsTo relation",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "properties": {
+        "belongName":{
+            "type": "string",
+            "required": true
+        }
+    },
+    "relations": {
+        "testUser": {
+            "type": "belongsTo",
+            "model": "TestUser"
+        }
+    }
+}

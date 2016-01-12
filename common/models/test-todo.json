@@ -1,22 +1,21 @@
 {
-    "name": "Todo",
-    "description": "todo belongsTo relation",
+    "name": "TestTodo",
+    "description": "test todo belongsTo relation",
     "idInjection": true,
     "properties": {
-        "todo":{
+        "todoName":{
             "type": "string",
             "required": true
         },
-        "userId":{
+        "testUserId":{
             "type": "string",
             "required": true
         }
     },
     "relations": {
-        "user": {
+        "testUser": {
             "type": "belongsTo",
-            "model": "TestUser",
-            "foreignKey": "userId"
+            "model": "TestUser"
         }
     }
 }

@@ -1,0 +1,19 @@
+{
+    "name": "tag",
+    "base": "PersistedModel",
+    "description": "hasAndBelongsToMany relation",
+    "idInjection": true,
+    "properties": {
+        "tagName":{
+            "type": "string",
+            "required": true
+        }
+    },
+    "relations": {
+        "posts": {
+            "type": "hasAndBelongsToMany",
+            "model": "post",
+            "foreignKey": "postId"
+        }
+    }
+}

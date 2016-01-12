@@ -1,0 +1,30 @@
+{
+    "name": "Course",
+    "base": "PersistedModel",
+    "description": "hasMany through relation",
+    "idInjection": true,
+    "properties": {
+        "courseName":{
+            "type": "string",
+            "required": true
+        },
+        "studentId":{
+            "type": "string",
+            "required": true
+        },
+        "teacherId":{
+            "type": "string",
+            "required": true
+        }
+    },
+    "relations": {
+        "student": {
+            "type": "belongsTo",
+            "model": "Student"
+        },
+        "teacher": {
+            "type": "belongsTo",
+            "model": "Teacher"
+        }
+    }
+}
