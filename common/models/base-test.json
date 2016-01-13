@@ -5,7 +5,8 @@
     "properties": {
         "baseField1":{
             "type": "string",
-            "required": true
+            "required": true,
+            "defaultFn": "uuid"
         },
         "baseField2":{
             "type": "string",

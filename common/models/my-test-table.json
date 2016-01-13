@@ -1,7 +1,7 @@
 {
     "name": "MyTestTable",
     "description": "mysql sql test table description",
-    "idInjection": true,
+    "idInjection": false,
     "properties": {
         "test1":{
             "type": "string",
