@@ -203,4 +203,47 @@ module.exports = function(Orderer) {
         returns: {arg:'msg', type:'string'}
     }
    ); 
+
+
+    Orderer.testLimitSkip = function(limit, skip, cb) {
+        var where = {};
+        Orderer.find({
+                limit:limit,
+                skip:skip
+            }, function(err, res) {
+            cb(null, res);
+        })
+    }
+    
+   Orderer.remoteMethod(
+    'testLimitSkip',
+    {
+        http:{path:'/testLimitSkip', verb:'get'},
+        accepts : [
+            {arg:'limit', type: 'number'},
+            {arg:'skip', type: 'number'}
+        ],
+        returns: {arg:'msg', type:'string'}
+    }
+   ); 
+    Orderer.testOrderBy = function(order1, order2, cb) {
+        order2 = order2 || "";
+        Orderer.find({
+                order:[order1, order2]
+            }, function(err, res) {
+            cb(null, res);
+        })
+    }
+    
+   Orderer.remoteMethod(
+    'testOrderBy',
+    {
+        http:{path:'/testOrderBy', verb:'get'},
+        accepts : [
+            {arg:'order1', type: 'string'},
+            {arg:'order2', type: 'string'}
+        ],
+        returns: {arg:'msg', type:'string'}
+    }
+   ); 
 }

@@ -80,26 +80,4 @@ module.exports = function(Customer) {
    ); 
 
 
-
-    Customer.testInclude2 = function(cid,cb) {
-        var fields = {cutName:true, address:true, id:true};
-        Customer.find({
-            fields:fields,
-            where:{id:cid},
-            include:{orderer:'friends'}
-        }, function(err, res) {
-            cb(null, res);
-        })
-    }
-    
-   Customer.remoteMethod(
-    'testInclude2',
-    {
-        http:{path:'/testInclude2', verb:'get'},
-        accepts:[
-            {arg: 'cid', type: 'string'} 
-        ],
-        returns: {arg:'msg', type:'string'}
-    }
-   ); 
 }
