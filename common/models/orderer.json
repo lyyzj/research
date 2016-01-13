@@ -1,0 +1,28 @@
+{
+    "name": "Orderer",
+    "description": "where filter model",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "properties": {
+        "orderNo":{
+            "type": "string",
+            "required": true
+        },
+        "price":{
+            "type": "number",
+            "required":true 
+        },
+        "productName":{
+            "type": "string",
+            "required":true 
+        },
+        "productNumber":{
+            "type": "number",
+            "required":true 
+        },
+        "cid":{
+            "type": "string",
+            "required":true 
+        }
+    }
+}

@@ -46,5 +46,14 @@
   },
   "BaseRelation": {
     "dataSource": "mongodb"
+  },
+  "Customer": {
+    "dataSource": "mongodb"
+  },
+  "Orderer": {
+    "dataSource": "mongodb"
+  },
+  "Friend": {
+    "dataSource": "mongodb"
   }
 }

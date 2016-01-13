@@ -1,0 +1,32 @@
+{
+    "name": "Customer",
+    "description": "field filter model",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "properties": {
+        "cutName":{
+            "type": "string",
+            "required": true
+        },
+        "address":{
+            "type": "string",
+            "required": false
+        },
+        "email":{
+            "type": "string",
+            "required": false
+        }
+    },
+    "relations": {
+        "orders":{
+            "type": "hasMany",
+            "model": "Orderer",
+            "foreignKey": "cid"
+        },
+        "friends":{
+            "type": "hasMany",
+            "model": "Friend",
+            "foreignKey": "cid"
+        }
+    }
+}
