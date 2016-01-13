@@ -21,8 +21,8 @@
             "required": false
         }
     },
-    "hidden": ["baseField2"],
-    "protected": ["baseField1"],
+    "hidden": ["baseField1"],
+    "protected": ["baseField1", "id"],
     "options": {
         "description": "option base test model",
         "mysql": {
