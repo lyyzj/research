@@ -1,0 +1,30 @@
+{
+    "name": "Product",
+    "description": "valid model",
+    "idInjection": true,
+    "properties": {
+        "productName":{
+            "type": "string",
+            "required": false 
+        },
+        "productNo":{
+            "type": "string",
+            "required": false
+        },
+        "price":{
+            "type": "string",
+            "required": false
+        },
+        "property":{
+            "type": "string",
+            "required": false
+        },
+        "productNumber":{
+            "type": "number",
+            "required": false
+        }
+    },
+    "scopes": {
+        "top5": {"limit": 5}
+    }
+}

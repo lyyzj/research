@@ -1,0 +1,14 @@
+{
+    "name": "Fitting",
+    "description": "valid unique model",
+    "idInjection": true,
+    "properties": {
+        "fittingNo":{
+            "type": "string",
+            "required": false
+        }
+    },
+    "scopes": {
+        "top5": {"limit": 5}
+    }
+}

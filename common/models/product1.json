@@ -1,0 +1,22 @@
+{
+    "name": "Product1",
+    "description": "valid model",
+    "idInjection": true,
+    "properties": {
+        "productNo":{
+            "type": "string",
+            "required": false
+        },
+        "productName":{
+            "type": "string",
+            "required": false
+        },
+        "productNumber":{
+            "type": "number",
+            "required": false
+        }
+    },
+    "scopes": {
+        "top5": {"limit": 5}
+    }
+}
