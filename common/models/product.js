@@ -1,5 +1,5 @@
 module.exports = function(Product) {
-    Product.validatesAbsenceOf('productName1', {message: "productName1 can't set!!"});
+    Product.validatesAbsenceOf('productName1', {message: "productName1 property can't set!!"});
     Product.validatesPresenceOf('productName', {message: "productName can't blank!!"});
     Product.validatesPresenceOf('price', {message: "price can't blank!!"});
 

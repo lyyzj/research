@@ -6,6 +6,7 @@ module.exports = function(Product1) {
             err(); 
         }
     }, {message: "productName 不能为xx"})
+
     /*
     Product1.validate('productNo', customValid, {message: "productNo 不能为xx"});
 
