@@ -1,0 +1,22 @@
+{
+    "name": "Customer1",
+    "description": "strict customer model",
+    "base": "PersistedModel",
+    "idInjection": false,
+    "strict": true,
+    "properties": {
+        "field1":{
+            "type": "string" 
+        },
+        "field2":{
+            "type": "string" 
+        },
+        "deleted":{
+            "type": "boolean",
+            "required": true,
+            "default": false
+        }
+    },
+    "http.path": "builtpath"
+
+}

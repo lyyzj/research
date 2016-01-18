@@ -14,7 +14,7 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongodb"
   },
   "AccessToken": {
     "dataSource": "db",
@@ -45,6 +45,12 @@
     "dataSource": "mongodb"
   },
   "BaseRelation": {
+    "dataSource": "mongodb"
+  },
+  "ExtendUser": {
+    "dataSource": "mongodb"
+  },
+  "Customer1": {
     "dataSource": "mongodb"
   }
 }

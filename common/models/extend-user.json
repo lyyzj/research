@@ -1,0 +1,7 @@
+{
+    "name": "ExtendUser",
+    "description": "extend built-in user model",
+    "base": "User",
+    "plural": "BuiltUser",
+    "idInjection": false
+}
