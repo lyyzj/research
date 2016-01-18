@@ -46,5 +46,8 @@
   },
   "BaseRelation": {
     "dataSource": "mongodb"
+  },
+  "TestCompositeIds": {
+    "dataSource": "mongodb"
   }
 }

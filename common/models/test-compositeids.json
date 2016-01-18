@@ -1,0 +1,17 @@
+{
+    "name": "TestCompositeIds",
+    "description": "composite ids model",
+    "idInjection": false,
+    "properties": {
+        "useId":{
+            "type": "string",
+            "required": true,
+            "id": 2
+        },
+        "email":{
+            "type": "string",
+            "required": true,
+            "id": 1
+        }
+    }
+}
