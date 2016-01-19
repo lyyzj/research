@@ -1,0 +1,17 @@
+{
+    "name": "Logic",
+    "description": "add Logic model",
+    "idInjection": true,
+    "plural": "testLogic",
+    "properties": {
+        "baseField1":{
+            "type": "string",
+            "required": false,
+            "defaultFn": "uuid"
+        },
+        "baseField2":{
+            "type": "string",
+            "required": false
+        }
+    }
+}

@@ -46,5 +46,11 @@
   },
   "BaseRelation": {
     "dataSource": "mongodb"
+  },
+  "Logic": {
+    "dataSource": "mongodb"
+  },
+  "LogicArg": {
+    "dataSource": "mongodb"
   }
 }

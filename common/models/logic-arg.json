@@ -1,0 +1,16 @@
+{
+    "name": "LogicArg",
+    "description": "add Logic model",
+    "idInjection": true,
+    "properties": {
+        "a1":{
+            "type": "string",
+            "required": false,
+            "defaultFn": "uuid"
+        },
+        "b2":{
+            "type": "string",
+            "required": false
+        }
+    }
+}
