@@ -52,5 +52,11 @@
   },
   "LogicArg": {
     "dataSource": "mongodb"
+  },
+  "Hook": {
+    "dataSource": "mongodb"
+  },
+  "OperationHook": {
+    "dataSource": "mongodb"
   }
 }
