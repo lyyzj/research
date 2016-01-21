@@ -1,0 +1,31 @@
+{
+    "name": "Mixin",
+    "description": "Mixin test model",
+    "idInjection": false,
+    "properties": {
+        "baseField1":{
+            "type": "string",
+            "required": true,
+            "defaultFn": "uuid"
+        },
+        "baseField2":{
+            "type": "string",
+            "required": false
+        },
+        "updateAt": {
+            "type": "date",
+            "required": false
+        },
+        "isModify": {
+            "type": "boolean",
+            "required": false
+        }
+    },
+    "mixins": {
+        "Timestamp": {
+            "required":true,
+            "test":1
+        },
+        "AddUpdate":true
+    }
+}
