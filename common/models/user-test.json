@@ -1,0 +1,14 @@
+{
+    "name": "userTest",
+    "description": "user accessToken and acls model",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "properties": {
+        "field1":{
+            "type": "string",
+            "required": false
+        }
+    },
+    "relations":{},
+    "acls":[]
+}

@@ -1,0 +1,64 @@
+{
+    "name": "UserOrder",
+    "description": "user order test accessToken and acls model",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "properties": {
+        "orderNo":{
+            "type": "string",
+            "required": true
+        },
+        "orderPrice":{
+            "type": "number",
+            "required": false,
+            "default": 0
+        },
+        "userId":{
+            "type": "string",
+            "required":true 
+        }
+    },
+    "relations":{
+        "user": {
+            "type": "belongsTo", 
+            "model": "user",
+            "foreignKey": "userId"
+        }
+    },
+    "acls":[
+        {
+           "accessType": "*", 
+           "principalType": "ROLE",
+           "principalId": "$everyone",
+           "permission": "DENY"
+        },
+        {
+           "accessType": "EXECUTE", 
+           "principalType": "USER",
+           "principalId": "56a56a8f86f5736248d3e4cc",
+           "permission": "ALLOW",
+           "property": ["testCreateOrder"]
+        },
+        {
+           "accessType": "EXECUTE", 
+           "principalType": "ROLE",
+           "principalId": "$authenticated",
+           "permission": "ALLOW",
+           "property": ["testUpdateOrder"]
+        },
+        {
+           "accessType": "READ", 
+           "principalType": "ROLE",
+           "principalId": "$owner",
+           "permission": "ALLOW",
+           "property": ["find", "count", "findById"]
+        },
+        {
+           "accessType": "READ", 
+           "principalType": "ROLE",
+           "principalId": "admin",
+           "permission": "ALLOW",
+           "property": ["find", "count", "findById"]
+        }
+    ]
+}

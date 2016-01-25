@@ -1,6 +1,6 @@
 {
     "name": "BaseTest",
-    "description": "base test model",
+    "description": "base test and user login and accesstokenmodel",
     "idInjection": false,
     "properties": {
         "baseField1":{

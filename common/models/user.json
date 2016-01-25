@@ -1,0 +1,20 @@
+{
+    "name": "user",
+    "description": "user accessToken and acls model",
+    "base": "User",
+    "idInjection": true,
+    "properties": {
+        "username":{
+            "type": "string",
+            "required": true
+        }
+    },
+    "relations":{
+        "orders": {
+            "type": "hasMany", 
+            "model": "UserOrder",
+            "foreignKey": "userId"
+        }
+    },
+    "acls":[]
+}
