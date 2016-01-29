@@ -1,0 +1,23 @@
+{
+    "name": "ArticleUser",
+    "description": "Article User model",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "properties": {
+        "username":{
+            "type": "string",
+            "required": true
+        }
+    },
+    "relations":{
+        "articles": {
+            "model": "Article",
+            "type": "hasMany",
+            "foreignKey": "userId"
+        }
+    },
+    "mixins": {
+        "Find": true
+    }
+
+}
